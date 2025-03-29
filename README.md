@@ -87,9 +87,10 @@ ORDER BY order_count DESC;
 
 # 💻 Technical Implementation
 ## SQL Files
-- [objective_1.sql](objective _1_queries.sql): for menu analysis i.e. Item counts, price analysis
-- [objective_2.sql](objective _2_queries.sql): for order patterns i.e. Date ranges, order volumes
-- [objective_3.sql](objective _3_queries.sql): for combined insights i.e.Popular items, spending analysis
+- [create_restaurant_db.sql](create_restaurant_db.sql):for creating the database, tables and inserting all the provided data.
+- [objective_1.sql](objective_1_queries.sql): for menu analysis i.e. Item counts, price analysis.
+- [objective_2.sql](objective_2_queries.sql): for order patterns i.e. Date ranges, order volumes.
+- [objective_3.sql](objective_3_queries.sql): for combined insights i.e.Popular items, spending analysis.
 
 ## Analysis Approach
 - Data exploration with basic aggregatess

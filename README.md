@@ -29,8 +29,9 @@ Taste of the World Restaurant serves international cuisine with diverse menu off
 
 # 🔍 Key Insights
 ## 🍔 Menu Item Analysis
+###  Most/Least Popular Items
 
--- Most/Least Popular Items
+```sql
 SELECT 
     mi.item_name,
     mi.category,
@@ -39,8 +40,8 @@ FROM order_details od
 JOIN menu_items mi ON od.item_id = mi.menu_item_id
 GROUP BY mi.item_name, mi.category
 ORDER BY order_count DESC;
-
-Findings:
+```
+### Findings:
 
     🏆 Top Performer: Hamburger (American) - 622 orders
 
@@ -91,29 +92,19 @@ Findings:
 - [objective_3.sql](objective _3_queries.sql): for combined insights i.e.Popular items, spending analysis
 
 ## Analysis Approach
-Data exploration with basic aggregatess
+- Data exploration with basic aggregatess
+- Join operations to connect menu and orders
+- Advanced grouping for category analysis
+- Time-based pattern detection-
 
-    Join operations to connect menu and orders
-
-    Advanced grouping for category analysis
-
-    Time-based pattern detection
-
-🔮 Future Work
-
-**Planned Analyses:**
+# 🔮 Future Work
+## **Planned Analyses:**
 1. Customer segmentation (RFM model)
 2. Menu item profitability (COGS integration)
 3. Seasonal trend analysis (full year data)
 4. Table turnover rate optimization
 
-**Required Data:**
+## **Required Data:**
 - Customer demographics
 - Ingredient costs
 - Table reservation logs
-
-📅 Report Generated: {current_date}
-👨‍💻 Data Analyst: {your_name}
-📧 Contact: {your_email}
-
-Data Visualization
